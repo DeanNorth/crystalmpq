@@ -158,6 +158,8 @@ namespace CrystalMpq.Explorer
 			AddViewer(new BitmapViewer(pluginsHost));
 			AddViewer(new TextViewer(pluginsHost));
 			AddViewer(new FontViewer(pluginsHost));
+
+            AddViewer(new DC6Viewer(pluginsHost));
 		}
 
 		private void LoadPlugins()
@@ -199,6 +201,10 @@ namespace CrystalMpq.Explorer
 					    fileViewerAssociations.Add(parts[0], fileViewer);
 				}
 			}
+
+            FileViewer dc6FileViewer;
+            if (fileViewers.TryGetValue(typeof(DC6Viewer).AssemblyQualifiedName, out dc6FileViewer))
+                fileViewerAssociations.Add(".dc6", dc6FileViewer);
 		}
 
 		#endregion

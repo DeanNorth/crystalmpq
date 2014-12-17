@@ -196,6 +196,9 @@
     </Compile>
     <Compile Include="ViewerAssociation.cs" />
     <Compile Include="ViewerAssociationCollection.cs" />
+    <Compile Include="Viewers\DC6Viewer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="Viewers\BitmapViewer.cs">
       <SubType>UserControl</SubType>
     </Compile>

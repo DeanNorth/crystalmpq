@@ -79,6 +79,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
@@ -90,6 +91,7 @@
     <Compile Include="BlpTexture.cs" />
     <Compile Include="ClientDatabase.cs" />
     <Compile Include="ClientDatabaseIndex.cs" />
+    <Compile Include="DC6.cs" />
     <Compile Include="Dxt1Surface.cs" />
     <Compile Include="Dxt3Surface.cs" />
     <Compile Include="Dxt5Surface.cs" />
